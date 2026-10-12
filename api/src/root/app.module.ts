@@ -1,7 +1,7 @@
 import { DynamicModule, Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { AppConfigModule } from '@common/config/environment/app-config.module';
+import { AppConfigModule } from '@common/config/app-config.module';
 
 @Module({
   imports: [],

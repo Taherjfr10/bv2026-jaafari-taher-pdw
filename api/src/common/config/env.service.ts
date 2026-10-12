@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
-import { ValidatedEnvironment } from "./environment.validation";
+import { ValidatedEnvironment } from '@common/config/environment/environment.validation';
 import { ConfigService } from "@nestjs/config";
-import { AppMode, ConfigKey } from "../data/enum";
+import { AppMode, ConfigKey } from '@common/config/data/enum';
 
 @Injectable()
 export class EnvService {

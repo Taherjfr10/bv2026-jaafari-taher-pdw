@@ -1,4 +1,4 @@
-import { EnvService } from '@common/config/environment/env.service';
+import { EnvService } from '@common/config/env.service';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from '@root/app.module';
 
