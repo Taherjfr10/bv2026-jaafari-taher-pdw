@@ -3,3 +3,7 @@ export enum AppMode {
     Test='TEST',
     Prod='PROD',
 }
+
+export enum DatabaseType {
+  Postgres = 'postgres',
+}

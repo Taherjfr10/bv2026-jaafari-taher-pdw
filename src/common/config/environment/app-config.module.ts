@@ -14,7 +14,7 @@ export class AppConfigModule {
                 isGlobal: true,
                 validate: validateEnvironment,
             }),
-        ],  
+        ],
         providers: [EnvService],
         exports: [EnvService],
 };
