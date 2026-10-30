@@ -11,7 +11,7 @@ import { ApiCodeResponse, ApiResponse } from '../data';
 import { API_SUCCESS_CODE_KEY, SKIP_API_TRANSFORM_KEY } from '../decorator';
 
 @Injectable()
-export class ApiResponseInterceptor implements NestInterceptor {
+export class ApiInterceptor implements NestInterceptor {
   constructor(private readonly reflector: Reflector) {}
 
   intercept(context: ExecutionContext, next: CallHandler): Observable<unknown> {

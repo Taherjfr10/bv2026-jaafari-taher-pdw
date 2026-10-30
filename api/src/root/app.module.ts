@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AppConfigModule } from '@common/config/app-config.module';
 import { LoggingModule } from '@common/logging/logging.module';
+import { ApiInterceptor } from '@common/api/interceptor';
 
 @Module({
   imports: [],
