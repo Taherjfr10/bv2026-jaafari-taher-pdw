@@ -11,19 +11,20 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "target": "ES2023",
-    "types": ["node", "jest"],
     "sourceMap": true,
     "outDir": "./dist",
-    "incremental": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "strictPropertyInitialization": false,
     "paths": {
       "@common/*": ["./src/common/*"],
       "@core/*": ["./src/core/*"],
-      "@features/*": ["./src/features/*"],
-      "@root/*": ["./src/root/*"],
-      "@config/*": ["./src/config/*"]
+      "@feature/*": ["./src/feature/*"],
+      "@root/*": ["./src/root/*"]
+    },
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "noFallthroughCasesInSwitch": false
   }
 }
-    }

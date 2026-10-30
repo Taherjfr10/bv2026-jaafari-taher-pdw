@@ -3,7 +3,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from '@root/app.module';
 
 const bootstrap = async () => {
-  const app = await NestFactory.create(AppModule.register()); 
+  const app = await NestFactory.create(AppModule.register());
   const envService: EnvService = app.get(EnvService);
   await app.listen('3000');
 };
