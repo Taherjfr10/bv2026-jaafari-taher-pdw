@@ -27,4 +27,8 @@ lockedUntil!: Date | null;
 changedAt!: Date;
 @Column({ name: 'disabled_at', type: 'timestamptz', nullable: true })
 disabledAt!: Date | null;
+@Column({ name: 'last_failed_at', type: 'timestamptz', nullable: true })
+lastFailedAt!: Date | null;
+@Column({ name: 'last_used_at', type: 'timestamptz', nullable: true })
+lastUsedAt!: Date | null;
 }
