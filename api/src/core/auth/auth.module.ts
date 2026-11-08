@@ -8,6 +8,9 @@ import { PasswordHasherService, PasswordPolicyService, AuthCookieService, CsrfSe
 import { AuthIdentifierService } from "./service/auth-identifier.service";
 import { PasswordCredentialService } from "./service/password-credential.service";
 import { Module } from "@nestjs/common/decorators/modules/module.decorator";
+import { APP_GUARD } from "@nestjs/core/constants";
+import { AccessAuthGuard } from "./guard/access-auth.guard";
+import { OriginGuard } from "./guard";
 
 
 
@@ -29,6 +32,8 @@ import { Module } from "@nestjs/common/decorators/modules/module.decorator";
  AuthCookieService,
  CsrfService,
  TokenCryptoService,
- ],
+{ provide: APP_GUARD, useClass: OriginGuard },
+{ provide: APP_GUARD, useClass: AccessAuthGuard },
+],
 })
 export class AuthModule {}

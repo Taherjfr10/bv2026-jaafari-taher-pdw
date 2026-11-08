@@ -9,6 +9,12 @@ export type AuthCookieNames = {
 };
 @Injectable()
 export class AuthCookieService {
+ setRefreshCookie(response: Response<any, Record<string, any>>, refreshToken: any, refreshExpiresAt: any) {
+     throw new Error("Method not implemented.");
+ }
+ setCsrfCookie(response: Response<any, Record<string, any>>, csrfToken: any, refreshExpiresAt: any) {
+     throw new Error("Method not implemented.");
+ }
  readonly names: AuthCookieNames;
  constructor(private readonly envService: EnvService) {
  this.names = this.envService.isProduction
